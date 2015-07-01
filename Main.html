@@ -2,92 +2,34 @@
 <html>
   <head>
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
-    <title>Main</title>
+    <title>main</title>
     <style type="text/css">
-#scores {  
-  position: absolute;  
-  left: 0px;  
-  right: 0px;  
-  margin-top: auto;  
-  margin-right: auto;  
-  margin-bottom: auto;  
-  margin-left: auto;  
-  font-size: 3em;  
-  text-align: center;
+#Title {  
+  font-size: xx-large;
 }
 
-.info-display {  
-  width: 25%;  
-  height: 25%;  
-  position: absolute;  
-  top: 50%;  
-  font-size: 3em;
-}
-
-#player1-info {  
-  left: 25%;
-}
-
-#player2-info {  
-  right: 0px;
-}
-
-#help {  
-  display: none;  
-  position: absolute;  
-  top: 0px;  
-  left: 0px;
-}
-
-#help.reveal {  
-  display: block;
-}
-
-html, body {  
-  width: 100%;  
-  height: 100%;  
-  margin-top: 0px;  
-  margin-right: 0px;  
-  margin-bottom: 0px;  
-  margin-left: 0px;  
-  background-color: black;  
-  color: white;  
-  overflow: hidden;
-}
-
-body:after {  
-  content: "";  
-  display: block;  
-  height: 100%;  
-  width: 1px;  
-  margin-top: 0px;  
-  margin-right: auto;  
-  margin-bottom: 0px;  
-  margin-left: auto;  
-  border-left-width: 3px;  
-  border-left-style: dashed;  
-  border-left-color: initial;
-}
-
-</style> </head>
-  <body id="Title">
-    <div id="help"> Player 1 controls<br>
-      "Q" = Up<br>
-      "A" = Down<br>
-      <br>
-      Player 2 controls<br>
-      Up arrow = Up<br>
-      Down arrow = Down<br>
-    </div>
-    <div id="scores"> <span id="player1-points">0</span> <span id="player2-points">0</span>
-    </div>
-    <script type="text/javascript" src="./socket.io/socket.io.js"></script>The
-    Best Pong Game EVER!&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    <a href="howto.html">How to Play</a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-    <a href="about.html">About the Developer</a><br>
+</style></head>
+  <body>
+    <p id="Title">The Best Pong Game EVER!</p>
+    <p><br>
+    </p>
+    <canvas tabindex="1" width="640" height="480"></canvas>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="game.js"></script>
+    <script src="entity.js"></script>
+    <script src="ball.js"></script>
+    <script src="paddle.js"></script>
+    <script src="pong.js"></script>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><a href="howto.html">How To Play</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; <a href="about.html">About The Developer</a></p>
   </body>
 </html>
