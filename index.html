@@ -1,81 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<style type="text/css">
-	#scores {
-		position:absolute;
-		left:0;
-		right:0;
-		margin:auto;
-		font-size:3em;
-		text-align:center;
-	}
-
-	.info-display {
-		width:25%;
-		height:25%;
-		position:absolute;
-		top:50%;
-		font-size:3em;
-	}
-
-	#player1-info {
-		left:25%;
-	}
-	#player2-info {		
-		right:0;
-	}
-
-	#help {
-		display:none;
-		position:absolute;
-		top:0;
-		left:0;
-	}
-	#help.reveal {
-		display:block;
-	}
-
-	html,body {
-		width:100%;
-		height:100%;
-		margin:0;
-		background-color: #000;
-		color:#fff;
-		overflow:hidden;
-	}
-
-	body:after {
-		content:"";
-		display:block;
-		height: 100%;
-		width:1px;
-		margin:0 auto;
-		border-left:3px dashed;
-	}
-
-
-	</style>
+  <meta charset="utf-8">        
+  <title>Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="help">
-		Player 1 controls<br>
-		"Q" = Up<br>
-		"A" = Down<br>
-		<br>
-		Player 2 controls<br>
-		Up arrow = Up<br>
-		Down arrow = Down<br>
-	</div>
-	<div id="scores">
-		<span id="player1-points">0</span>
-		<span id="player2-points">0</span>
-	</div>
-	<div id="player1-info" class="info-display"></div>
-	<div id="player2-info" class="info-display"></div>
-	<script type="text/javascript" src="./socket.io/socket.io.js"></script>
-	<script type="text/javascript" src="socket_client.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+	
+
+	
+  <canvas tabindex="1" width="640" height="480"></canvas>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="game.js"></script>
+  <script src="entity.js"></script>
+  <script src="ball.js"></script>
+  <script src="paddle.js"></script>
+  <script src="pong.js"></script>
+  
 </body>
-</html>
+</html
