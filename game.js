@@ -29,9 +29,9 @@ Game.keys = {
 
 	32: 'space',
 	37: 'left',
-	38: 'up',
+	81: 'up',
 	39: 'right',
-	40: 'down'
+	65: 'down'
 }
 
 Game.prototype.start = function(){
